@@ -5,6 +5,7 @@ package com.company;
 import com.company.Arrayservice.ArrayService;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -15,10 +16,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int len = scanner.nextInt();
         int[] nums = new int[len];
+      //  int[] myArray = new int[];
         for (int i = 0; i < len; i++) {
             nums[i] = scanner.nextInt();
         }
         ArrayService.AriphmeticMean(nums, len);
+
+        ArrayService.Dublicat(nums, len);
+   //     System.out.println(Arrays.toString(myArray));
 //        ArrayService.PositiveNumber(nums, len);
 //        for (int num : nums) {     //For each num- это текущий элемент
 //            System.out.println(num + "");
